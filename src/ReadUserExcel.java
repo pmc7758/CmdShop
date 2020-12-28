@@ -8,8 +8,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class ReadExcel {
-    public User[] readExcel(File file) {
+public class ReadUserExcel {
+    public User[] readUserExcel(File file) {
         User users[] = null;
         try {
             XSSFWorkbook xw = new XSSFWorkbook(new FileInputStream(file));
