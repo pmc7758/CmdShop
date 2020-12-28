@@ -27,12 +27,12 @@ public class Index {
 
                     File f1 = new File("C:\\Users\\lenovo\\IdeaProjects\\CmdShop\\src\\product.xlsx");
                     ReadProductExcel readProductExcel = new ReadProductExcel();
-                    Product[] products = readProductExcel.readProductExcel(f1);
+                    Product[] products = readProductExcel.readAllProductExcel(f1);
                     for (Product product:products){
                         System.out.print(product.getId());
-                        System.out.print("\t" + product.getProductName());
+                        System.out.print("\t\t" + product.getProductName());
                         System.out.print("\t" + product.getPrice());
-                        System.out.println("\t" + product.getDes());
+                        System.out.println("\t\t" + product.getDes());
                     }
                     System.out.println("请输入你想要的商品id");
                     scanner.next();
